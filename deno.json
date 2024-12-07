@@ -1,0 +1,12 @@
+{
+  "name": "@avroit/memcached",
+  "version": "0.0.1",
+  "license": "MIT",
+  "exports": "./mod.ts",
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}
