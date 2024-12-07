@@ -59,7 +59,7 @@ Deno.test("Memcached: add", async () => {
   assertRejects(
     () => memcached.add("new_key", "new_value"),
     Error,
-    `Failed to add key: NOT_STORED`
+    `Failed to add key: NOT_STORED`,
   ).finally(memcached.closeAll.bind(memcached));
 });
 

@@ -12,7 +12,7 @@ Deno.test(
   async () => {
     const cache = new InMemoryCached();
     assertEquals(await cache.get("nonExistentKey"), null);
-  }
+  },
 );
 
 Deno.test("InMemoryCached should overwrite existing values", async () => {
@@ -40,7 +40,7 @@ Deno.test(
   async () => {
     const cache = new InMemoryCached();
     assertEquals(await cache.get("nonExistentKey"), null);
-  }
+  },
 );
 
 Deno.test("InMemoryCached should overwrite existing values", async () => {
