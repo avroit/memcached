@@ -24,13 +24,13 @@ Both classes implement the `MemcachedClient` abstract class, ensuring a consiste
 ### Installation
 
 ```bash
-deno add jsr:@avroit/memecached
+deno add jsr:@avroit/memcached
 ```
 
 You can import directly from your code using a URL that points to your versioned file. For example:
 
 ```typescript
-import { Memcached, InMemoryCached } from "@avroit/memecached";
+import { Memcached, InMemoryCached } from "@avroit/memcached";
 ```
 
 _(Replace the URL with the actual location where your code is hosted.)_
@@ -40,7 +40,7 @@ _(Replace the URL with the actual location where your code is hosted.)_
 ### 1. Connecting to a Memcached Server
 
 ```typescript
-import { Memcached } from "@avroit/memecached";
+import { Memcached } from "@avroit/memcached";
 
 async function main() {
   const client = new Memcached({
